@@ -1,0 +1,1 @@
+chrome --allow-file-access-from-files "file://C:\Users\Bonifacy\Desktop\alistar sums\index.html"

@@ -1,0 +1,68 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    opacity: 25%;
+}
+
+footer {
+    text-align: left;
+    padding: 1rem;
+    background-color: #1e3a8a; /* Deep blue */
+    color: white; /* White text */
+}
+footer a {
+    color: #93c5fd; /* Light blue for link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the link stand out */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+footer a:hover {
+    color: #60a5fa; /* Slightly darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+ul, ol {
+    text-align: left;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+main {
+    margin: 1rem;
+}
+
+.champion_select {
+    flex: 1;
+    min-width: 250px; /* give room for searching */
+}
+
+button {
+    background-color: #1e3a8a;
+    color: #93c5fd;
+    color: white;
+    border-radius: .25rem;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+button:hover {
+    background-color: #162a67;
+}
+
+.vertical-separator {
+    align-self: stretch;
+    width: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    opacity: 10%;
+}
