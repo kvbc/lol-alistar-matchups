@@ -2,7 +2,7 @@
 
 (async() => {
     const matchup_stats = await fetch(
-        './dataset.json',
+        'dataset.json',
         {
             headers: {
                 "Content-Type": "application/json",
@@ -147,11 +147,11 @@
     const summoner_spell_names = ["heal", "ignite", "exhaust", "ghost", "flash"];
     
     const summoner_spell_image_srcs = {
-        flash: "https://static.wikia.nocookie.net/leagueoflegends/images/7/74/Flash.png/revision/latest?cb=20180514003149",
-        ghost: "https://static.wikia.nocookie.net/leagueoflegends/images/a/ab/Ghost.png/revision/latest?cb=20180514003209",
-        ignite: "https://static.wikia.nocookie.net/leagueoflegends/images/f/f4/Ignite.png/revision/latest?cb=20180514003345",
-        exhaust: "https://static.wikia.nocookie.net/leagueoflegends/images/4/4a/Exhaust.png/revision/latest?cb=20180514003128",
-        heal: "https://static.wikia.nocookie.net/leagueoflegends/images/6/6e/Heal.png/revision/latest?cb=20180514003319"
+        flash: "flash.png",
+        ghost: "ghost.png",
+        ignite: "ignite.png",
+        exhaust: "exhaust.png",
+        heal: "heal.png"
     }
 
     {
@@ -488,7 +488,7 @@
             const champion_name = escape(data.text);
             const icon_url = 
                 champion_name === "None"
-                ? "./no_champion.jpg"
+                ? "no_champion.jpg"
                 : get_champion_name_icon_url(champion_name);
             return `<div style="display:flex; gap:.5rem; align-items: center;">
                 <img src="${icon_url}" width="24" height="24" />
