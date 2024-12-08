@@ -2,4 +2,4 @@
 
 https://kvbc.github.io/lol-alistar-matchups/
 
-![](screenshot.png)
+![](./screenshot.PNG)
